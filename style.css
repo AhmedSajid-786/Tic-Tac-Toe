@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #ed4264, #f1637f, #f57790, #fa8da3);
+  background-size: cover;
+  font-family: "poppins", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+h1 {
+  background: transparent;
+  color: white;
+  font-size: 30px;
+}
+
+.gameBox {
+  height: 340px;
+  width: 340px;
+  border: 8px solid rgb(254, 124, 146);
+  border-radius: 18px;
+  margin: 25px auto;
+  overflow: hidden;
+  box-shadow: 10px 8px 10px #cc3251;
+}
+
+.gameBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.gameBox div {
+  height: 28%;
+  width: 28%;
+  border: 2px solid rgb(249, 142, 160);
+  margin: 6px auto;
+  box-shadow: 4px 6px 4px #cc3251;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.gameBox div:hover {
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.turn {
+  background: transparent;
+  height: 60px;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.turn h1 {
+  font-size: 22px;
+  text-shadow: 4px 6px 4px #cc3251;
+}
+
+.player2 {
+  display: none;
+}
+.btn {
+  height: 50px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+}
+.btn button {
+  cursor: pointer;
+  height: 40px;
+  width: 200px;
+  font-size: 16px;
+  border: 3px solid rgb(254, 124, 146);
+  background-color: none;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 4px 6px 5px #cc3251;
+  transition: all 0.2s ease-in-out;
+}
+.btn button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: none;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: white;
+  text-shadow: 4px 5px 4px #cc3251;
+}
+
+.winner {
+  display: none;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5s;
+}
