@@ -38,13 +38,16 @@ boxes.forEach((box) => {
 });
 
 const reset = () => {
+  turnO = true;
+
   for (let box of boxes) {
-    turnO = true;
     box.innerText = "";
-    player1.innerText = "Player 1 Turn";
-    winner.style.display = "none";
-    player2.innerText = "";
+    box.classList.remove("disabled");
   }
+
+  player1.innerText = "Player 1 Turn";
+  player2.innerText = "";
+  winner.style.display = "none";
 };
 
 const disableBoxes = () => {
